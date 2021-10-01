@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="navigator.css">
+    <script src="navigator.js" defer></script>
+
+    <script>
+        const NavigatorOptions = {
+            in_time: 750,
+            out_time: 750,
+            hang_multiplier: 0.75,
+        }
+    </script>
+
+    <style>
+        section { background-image: linear-gradient(45deg, #d299c2 0%, #fef9d7 100%); }
+    </style>
+
+    <title>Navigator Demo</title>
+
+</head>
+
+<body>
+
+
+    <section name="main">
+        <h1>Main Section!</h1>
+        <button to="section-1">Go to Section-1</button>
+    </section>
+
+    <section name="section-1">
+        <h1>Section-1!</h1>
+        <div class="container full">
+            <button to="main" class="full">Go to Main</button>
+            <button to="section-2" class="full">Go to Section-2</button>
+        </div>
+    </section>
+
+    <section name="section-2">
+        <h1>Section-2!</h1>
+        <div class="container full">
+            <button to="main" class="full">Go to Main</button>
+            <button to="section-1" class="full">Go to Section-1</button>
+        </div>
+    </section>
+
+</body>
+
+</html>

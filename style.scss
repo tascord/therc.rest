@@ -1,0 +1,24 @@
+@import './navigator.scss';
+
+h1 {
+    margin: 0 0 1rem 0;
+    font-size: 2rem;
+    text-shadow: 0 0 10px transparentize($color: invert($foreground), $amount: 0.8);
+}
+
+p {
+    margin-top: 0;
+    text-shadow: 0 0 5px transparentize($color: invert($foreground), $amount: 0.8);
+}
+
+section[name="main"] {
+    background-image: linear-gradient(45deg, #d299c2 0%, #fef9d7 100%);
+}
+
+section[name="discord"] {
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+
+section[name="minecraft"] {
+    background-image: linear-gradient(324deg, #13547a 0%, #80d0c7 100%);
+}
